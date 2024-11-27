@@ -19,25 +19,19 @@ document.addEventListener('click', handleClickOutside);
 
 
 //botões variáveis
-const btn_filtrar = document.querySelector('.filtrar')
 const btn_add_prod = document.querySelector(".add_prod");
 const btn_edit = document.querySelector(".botao_editar");
 //modais variáveis
-const modal_filtrar = document.querySelector('.dialog_filtrar')
 const modal_add_prod = document.querySelector(".dialog_addprod");
 const modal_edit = document.querySelector(".dialog_editar");
 //saida variáveis
-const exit_filtrar = document.querySelector('.x_filtrar')
 const exit_add_prod = document.querySelector(".x_add_prod");
 const exit_edit = document.querySelector(".x_edit");
 //background escuro
 const fundo = document.querySelector('.div_dialog_escuro')
 
 //mostrar modais
-btn_filtrar.onclick = () => {
-  modal_filtrar.showModal()
-  fundo.classList.toggle('escuro_ativado')
-}
+
 btn_add_prod.onclick = () => {
   modal_add_prod.showModal()
   fundo.classList.toggle('escuro_ativado')
@@ -47,10 +41,7 @@ btn_edit.onclick = () => {
   fundo.classList.toggle('escuro_ativado')
 }
 //esconder modais
-exit_filtrar.onclick = () => {
-  modal_filtrar.close()
-  fundo.classList.remove('escuro_ativado')
-}
+
 exit_add_prod.onclick = () => {
   modal_add_prod.close()
   fundo.classList.remove('escuro_ativado')
