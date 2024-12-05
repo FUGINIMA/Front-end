@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #6a27ab, #1e90ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boletim-container {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.div-img {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 10%;
+    top: -9%;
+    
+
+}
+.baner{
+    width: 10%;
+    height: 10%;
+}
+
+.boletim-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1400px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #6a27ab;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.student-info {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.boletim-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px 20px;
+}
+
+.subject {
+    background-color: #D9D9D9;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: 600;
+    color: #000000;
+}
+
+.grade {
+    background-color: #D9D9D9;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: #000000;
+}
+@media screen and (max-width: 430px) {
+    body{
+       height: auto;
+    }
+    .boletim-container{
+        margin-top: 25%;
+    }
+    .div-img{
+        top: -6.5%;
+        width: 80%;
+        margin-left: 5%;
+        
+    }
+    .baner{
+        width: 30%;
+        height: 30%;
+        margin-bottom: 10%;
+    }
+    h1{
+        padding: 10px 20px;
+    }
+    .subject, .grade{
+        padding: 5px;
+    }
+    .boletim-box{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 1%;
+        height: 80%;
+        margin-bottom: 2%;
+    }
+}
