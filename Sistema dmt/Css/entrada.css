@@ -86,22 +86,20 @@
     outline: none;
  }
  
- button {
-    background-color: #6a27ab;
-    color: #fff;
-    padding: 12px 0;
-    width: 90%;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10%;
- }
- 
- button:hover {
-    background-color: #005cbf;
- }
+ .botao {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #6a27ab;
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+   text-align: center;
+   font-size: 16px;
+   margin: 5px;
+}
+.botao:hover {
+   background-color: #005cbf;
+}
  
  a {
     display: block;
